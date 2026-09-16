@@ -1,0 +1,125 @@
+
+
+/* varias el color y que no se repitan*/
+
+:root {
+    --rosa-neon: #ff007f;
+    --cian-neon: #00f0ff;
+    --fondo-oscuro: #0a0a12;
+    --fondo-destacado: #1a1a2e;
+    --blanco: white;
+}
+                                                             /* el box-sizing facilita el moldeo de los cuadros y hace  que el width y height
+                                                             incluyan el padding y el borde del elemento.*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--fondo-oscuro);
+    color: var(--blanco);
+}
+header {
+    background-color: var(--rosa-neon);
+    padding: 20px;
+}
+nav a {
+    color: var(--blanco);
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+
+/*
+con estos 2 se genera la animacion del mouse cuando pasa o clickea el boton 
+ */
+
+nav a:hover,
+nav a:focus {
+    color: var(--cian-neon);
+    text-decoration: underline;
+}
+
+
+/*titulos*/
+
+h2 {
+    color: var(--cian-neon);
+    border-bottom: 2px solid var(--cian-neon);
+}
+
+
+/*tarjeta*/
+
+.tarjeta {
+    border: 2px solid var(--rosa-neon);
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#destacado {
+    background-color: var(--fondo-destacado);
+}
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid var(--cian-neon);
+    padding: 8px;
+}
+
+footer {
+    background-color: var(--rosa-neon);
+    color: var(--blanco);
+    padding: 20px;
+}
+
+/* para reemplazar los styles que se pidieron */
+.titulo-principal {
+    color: var(--cian-neon);
+    margin: 0;
+}
+.subtitulo {
+    margin-top: 5px;
+}
+
+.contenido-principal {
+    padding: 20px;
+}
+
+.titulo-cian {
+    color: var(--cian-neon);
+}
+
+.titulo-rosa {
+    color: var(--rosa-neon);
+}
+
+.boton-enviar {
+    background-color: var(--cian-neon);
+    color: var(--fondo-oscuro);
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+}
+
+/*tambien el hover*/
+.boton-enviar:hover,
+.boton-enviar:focus {
+    background-color: var(--rosa-neon);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.pie-principal {
+    margin: 0;
+}
+
+.pie-secundario {
+    margin-top: 5px;
+    color: var(--fondo-destacado);}
